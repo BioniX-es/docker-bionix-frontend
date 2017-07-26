@@ -6,4 +6,4 @@ docker rm frontend
 docker build -t dockerfile .
 
 
-docker run -d --name frontend -t -p 80:80 dockerfile .
+docker run -e PATH -d --name frontend -t -p 80:80 dockerfile .
